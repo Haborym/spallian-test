@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,22 @@ body {
 .container {
   text-align: center;
   padding: 3rem 0;
+}
+
+.header-list {
+  display: inline-flex;
+  list-style: none;
+}
+
+.header-list-item {
+  background-color: darkcyan;
+  color: white;
+
+  text-decoration: none;
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
