@@ -1,15 +1,13 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Header } from "./components/Header";
+import { Outlet } from "react-router-dom";
 
-interface AppLayoutProps {
-  children: ReactNode;
-}
-
-export const AppLayout = ({ children }: AppLayoutProps) => {
+export const AppLayout = () => {
   return (
     <div className="container">
       <Header />
-      <main>{children}</main>
+      <Outlet />
+      {/* <main>{children}</main> */}
     </div>
   );
 };

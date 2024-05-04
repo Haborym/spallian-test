@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface HeaderItemProps {
   name: string;
@@ -7,8 +8,9 @@ interface HeaderItemProps {
 
 export const HeaderItem = ({ name, link }: HeaderItemProps) => {
   return (
-    <a href={link} className="header-list-item">
-      {name}
-    </a>
+    <Link to={link}>{name}</Link>
+    // <a href={link} className="header-list-item">
+    //   {name}
+    // </a>
   );
 };

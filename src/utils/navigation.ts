@@ -5,10 +5,10 @@ export const navigation = [
   },
   {
     name: "Search",
-    link: "/"
+    link: "/search"
   },
   {
     name: "Options",
-    link: "/"
+    link: "/options"
   }
 ]

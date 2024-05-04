@@ -3,8 +3,9 @@ import { AppLayout } from "./layout";
 
 export const App = () => {
   return (
-    <AppLayout>
-      <p>Write your code here.</p>
-    </AppLayout>
+    // <AppLayout>
+
+    // </AppLayout>
+    <p>Write your code here.</p>
   );
 };
