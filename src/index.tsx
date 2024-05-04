@@ -15,6 +15,11 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
+        path: "/",
+        element: <App />,
+        index: true,
+      },
+      {
         path: "/search",
         element: <p>Searching space</p>,
       },
