@@ -8,9 +8,8 @@ interface HeaderItemProps {
 
 export const HeaderItem = ({ name, link }: HeaderItemProps) => {
   return (
-    <Link to={link}>{name}</Link>
-    // <a href={link} className="header-list-item">
-    //   {name}
-    // </a>
+    <Link className="header-list-item" to={link}>
+      {name}
+    </Link>
   );
 };
