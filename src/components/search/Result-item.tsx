@@ -32,6 +32,7 @@ export const ResultItem = ({ book }: ResultItemProps) => {
               src={book.formats["image/jpeg"]}
               alt={"Picture of the book " + book.title}
               height={300}
+              width={200}
             />
           </div>
         </CardBody>
