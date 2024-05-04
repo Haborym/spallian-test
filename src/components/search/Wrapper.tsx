@@ -1,13 +1,10 @@
 import React, { ReactNode, useState } from "react";
 import { SearchBar } from "./SearchBar";
 import { SearchResult } from "./Search-result";
+import { Books } from "../../utils/types";
 
-interface SearchWrapperProps {
-  children?: ReactNode;
-}
-
-export const SearchWrapper = ({ children }: SearchWrapperProps) => {
-  const [searchResult, setSearchResult] = useState();
+export const SearchWrapper = () => {
+  const [searchResult, setSearchResult] = useState<Books>();
   const [searchInput, setSearchInput] = useState("");
 
   const search = async () => {
@@ -28,7 +25,6 @@ export const SearchWrapper = ({ children }: SearchWrapperProps) => {
         search={search}
       />
       {searchResult && <SearchResult data={searchResult} />}
-      {children}
     </>
   );
 };

@@ -47,6 +47,14 @@ body {
   border-bottom: 0.5px solid lightgrey;
 
   font-weight: bold;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-footer {
@@ -55,7 +63,7 @@ body {
 
   border-top: 0.5px solid lightgrey;
 
-  color: lightgrey;
+  color: black;
   font-weight: normal;
 }
 
@@ -63,4 +71,14 @@ input {
   width: 75%;
   height: 2rem;
   font-size: larger;
+}
+
+.margin-y-2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
