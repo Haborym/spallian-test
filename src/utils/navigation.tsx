@@ -1,9 +1,11 @@
 import React from "react";
 
-import { App } from "../App";
+import { HomePage } from "../pages/Home";
 import { createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout";
 import { RouteError } from "../components/errors/Route-error";
+import { SearchPage } from "../pages/Search";
+import { OptionsPage } from "../pages/Options";
 export const navigation = [
   {
     name: "Home",
@@ -26,16 +28,16 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <HomePage />,
         index: true,
       },
       {
         path: "/search",
-        element: <p>Searching space</p>,
+        element: <SearchPage />,
       },
       {
         path: "/options",
-        element: <p>Options page</p>,
+        element: <OptionsPage />,
       },
     ],
     errorElement: <RouteError />,
