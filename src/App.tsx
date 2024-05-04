@@ -1,11 +1,10 @@
 import React from "react";
-import { Header } from "./components/Header";
+import { AppLayout } from "./layout";
 
 export const App = () => {
   return (
-    <div className="container">
-      <Header />
+    <AppLayout>
       <p>Write your code here.</p>
-    </div>
+    </AppLayout>
   );
 };
