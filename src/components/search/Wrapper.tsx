@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 import { SearchBar } from "./SearchBar";
 import { SearchResult } from "./Search-result";
 import { Books } from "../../utils/types";
@@ -24,7 +24,7 @@ export const SearchWrapper = () => {
         setSearchInput={setSearchInput}
         search={search}
       />
-      {searchResult && <SearchResult data={searchResult} />}
+      {searchResult && <SearchResult data={searchResult} input={searchInput} />}
     </>
   );
 };
