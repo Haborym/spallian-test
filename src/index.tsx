@@ -5,6 +5,7 @@ import "./styles.css";
 import { App } from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "./layout";
+import { RouteError } from "./components/errors/Route-error";
 
 const domNode = document.getElementById("root") as HTMLElement;
 const root = createRoot(domNode);
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
         element: <p>Options page</p>,
       },
     ],
+    errorElement: <RouteError />,
   },
 ]);
 
