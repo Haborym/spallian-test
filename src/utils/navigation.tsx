@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./styles.css";
 import { App } from "../App";
 import { createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layout";

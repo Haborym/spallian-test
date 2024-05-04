@@ -30,3 +30,31 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.card {
+  margin: 20px;
+
+  display: grid;
+
+  border: 1px solid darkgray;
+  border-radius: 15px;
+}
+
+.card-header {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-bottom: 0.5px solid lightgrey;
+
+  font-weight: bold;
+}
+
+.card-footer {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-top: 0.5px solid lightgrey;
+
+  color: lightgrey;
+  font-weight: normal;
+}
