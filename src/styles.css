@@ -58,3 +58,9 @@ body {
   color: lightgrey;
   font-weight: normal;
 }
+
+input {
+  width: 75%;
+  height: 2rem;
+  font-size: larger;
+}

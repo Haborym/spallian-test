@@ -1,14 +1,9 @@
-import React from "react";
-import { CardHeader } from "./Card-header";
-import { CardBody } from "./Card-body";
-import { CardFooter } from "./Card-footer";
+import React, { ReactNode } from "react";
 
-export const Card = () => {
-  return (
-    <div className="card">
-      <CardHeader />
-      <CardBody />
-      <CardFooter />
-    </div>
-  );
+interface CardProps {
+  children: ReactNode;
+}
+
+export const Card = ({ children }: CardProps) => {
+  return <div className="card">{children}</div>;
 };

@@ -1,5 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-export const CardBody = () => {
-  return <p>This is a Card Body</p>;
+interface CardBodyProps {
+  children: ReactNode;
+}
+
+export const CardBody = ({ children }: CardBodyProps) => {
+  return <div className="card-body">{children}</div>;
 };

@@ -5,10 +5,5 @@ interface CardHeaderProps {
 }
 
 export const CardHeader = ({ children }: CardHeaderProps) => {
-  return (
-    <div className="card-header">
-      <p>This is a Card Header</p>
-      {children}
-    </div>
-  );
+  return <div className="card-header">{children}</div>;
 };
