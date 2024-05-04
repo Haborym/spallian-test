@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderItem } from "./Header-item";
 
-import { navigation } from "../utils/navigation";
+import { navigation } from "../../utils/navigation";
 
 export const HeaderList = () => {
   return (
