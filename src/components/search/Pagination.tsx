@@ -1,13 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 interface PaginationProps {
   previous: string | null;
   next: string | null;
   count: number;
+  pageTrigger: React.Dispatch<React.SetStateAction<string>>;
+  trigger: () => Promise<void>;
 }
 
-export const Pagination = ({ previous, next, count }: PaginationProps) => {
+export const Pagination = ({
+  previous,
+  next,
+  count,
+  pageTrigger,
+  trigger,
+}: PaginationProps) => {
   return (
     <section
       style={{
@@ -17,15 +24,25 @@ export const Pagination = ({ previous, next, count }: PaginationProps) => {
       }}
     >
       {previous && (
-        <Link className="margin-y-2" to={previous}>
+        <button
+          onClick={() => {
+            pageTrigger(previous);
+            trigger();
+          }}
+        >
           Previous
-        </Link>
+        </button>
       )}
       <p className="margin-y-2">Found {count} results.</p>
       {next && (
-        <Link className="margin-y-2" to={next ?? ""}>
+        <button
+          onClick={() => {
+            pageTrigger(next);
+            trigger();
+          }}
+        >
           Next
-        </Link>
+        </button>
       )}
     </section>
   );

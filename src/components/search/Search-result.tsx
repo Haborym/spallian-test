@@ -7,9 +7,16 @@ import { BooksError } from "../errors/Books-error";
 interface SearchResultProps {
   data: Books;
   input: string;
+  pageTrigger: React.Dispatch<React.SetStateAction<string>>;
+  trigger: () => Promise<void>;
 }
 
-export const SearchResult = ({ data, input }: SearchResultProps) => {
+export const SearchResult = ({
+  data,
+  input,
+  pageTrigger,
+  trigger,
+}: SearchResultProps) => {
   return (
     <>
       {data.results.length === 0 && <BooksError input={input} />}
@@ -19,6 +26,8 @@ export const SearchResult = ({ data, input }: SearchResultProps) => {
             previous={data.previous}
             next={data.next}
             count={data.count}
+            pageTrigger={pageTrigger}
+            trigger={trigger}
           />
           <div className="book-grid">
             {data.results &&
@@ -30,6 +39,8 @@ export const SearchResult = ({ data, input }: SearchResultProps) => {
             previous={data.previous}
             next={data.next}
             count={data.count}
+            pageTrigger={pageTrigger}
+            trigger={trigger}
           />
         </>
       )}
