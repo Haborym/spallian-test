@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,75 @@ body {
 .container {
   text-align: center;
   padding: 3rem 0;
+}
+
+.header-list {
+  display: inline-flex;
+  list-style: none;
+}
+
+.header-list-item {
+  background-color: darkcyan;
+  color: white;
+
+  text-decoration: none;
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card {
+  margin: 20px;
+
+  display: grid;
+
+  border: 1px solid darkgray;
+  border-radius: 15px;
+}
+
+.card-header {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-bottom: 0.5px solid lightgrey;
+
+  font-weight: bold;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-top: 0.5px solid lightgrey;
+
+  color: black;
+  font-weight: normal;
+}
+
+input {
+  width: 75%;
+  height: 2rem;
+  font-size: larger;
+}
+
+.margin-y-2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
